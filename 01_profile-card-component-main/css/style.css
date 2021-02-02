@@ -1,0 +1,139 @@
+:root {
+  --fuentePrimaria: 'Kumbh Sans', sans-serif;
+  --fuenteprimariasize: 1.8rem;
+  --darkcyan: hsl(185, 75%, 39%);
+  --verydarkdesaturatedblue: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+  --darkgray: hsl(0, 0%, 59%);
+  --darkgray1: rgba(150, 150, 150, 0.5);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--darkcyan);
+  background-image: url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  font-family: var(--fuentePrimaria);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*=============================================
+=                   Card                   =
+=============================================*/
+.card {
+  background-color: #fff;
+  max-width: 350px;
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.card__header {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 15rem;
+  position: relative;
+  text-align: center;
+}
+.card__image {
+  border: 0.5rem solid #fff;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.card__body {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.card__name {
+  color: var(--verydarkdesaturatedblue);
+  font-size: var(--fuenteprimariasize);
+  font-weight: 700;
+}
+.card__age {
+  font-weight: 400;
+  color: var(--darkgray);
+}
+.card__location {
+  font-size: 1.5rem;
+  color: var(--darkgray);
+}
+
+.card__footer {
+  border-top: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+.card__stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__stat {
+  text-align: center;
+}
+
+.stat__number {
+  font-size: var(--fuenteprimariasize);
+  font-weight: 700;
+  color: var(--verydarkdesaturatedblue);
+  margin-bottom: 0;
+}
+
+.stat__description {
+  font-size: 1.3rem;
+  color: var(--darkgray);
+  letter-spacing: 0.2rem;
+}
+
+/*============  End of Card  =============*/
+
+/*=============================================
+=                   footer                   =
+=============================================*/
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution {
+  background-color: #fff;
+  line-height: 1.5;
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.attribution p {
+  font-size: 2rem;
+}
+
+/*============  End of footer  =============*/
