@@ -1,0 +1,119 @@
+:root {
+  --fuentePrimaria: 'Karla', 'Courier New', Courier, monospace;
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrimaria);
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(221, 210, 210, 0.75);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(221, 210, 210, 0.75);
+  box-shadow: 0px 0px 10px 10px rgba(221, 210, 210, 0.75);
+  overflow: hidden;
+  display: grid;
+}
+
+.join {
+  background-color: white;
+  padding: 2rem;
+}
+.join-title {
+  color: var(--cyan);
+}
+.joint-subtitle {
+  color: var(--bright-yellow);
+}
+.join-text {
+  color: var(--Grayish-Blue);
+}
+
+.subscription {
+  background-color: #2bb3b1;
+  padding: 2rem;
+  color: white;
+}
+
+.subscription-priceText {
+  display: flex;
+  align-items: center;
+}
+.price {
+  margin-right: 2rem;
+  font-size: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2rem;
+  color: white;
+  background-color: var(--bright-yellow);
+  text-align: center;
+  width: 100%;
+  border-radius: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(221, 210, 210, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(221, 210, 210, 0.75);
+  box-shadow: 0px 0px 10px 1px rgba(221, 210, 210, 0.75);
+}
+
+.why-us {
+  background-color: #4abebd;
+  padding: 2rem;
+  color: white;
+}
+
+.whyus-list {
+  list-style: none;
+  padding: 0;
+}
+
+.whyus-list__item {
+  margin-bottom: 0.5rem;
+}
+.whyus-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

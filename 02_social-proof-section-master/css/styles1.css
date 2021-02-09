@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+}
+/*=============================================
+=                   layout                   =
+=============================================*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: minmax(80%, auto) 20%; */
+  grid-auto-flow: column;
+  grid-template-areas: 'main';
+  width: 90%;
+  max-width: 1440px;
+  /* height: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  justify-self: stretch;
+  grid-area: main;
+}
+
+.footer {
+  align-self: stretch;
+  grid-area: footer;
+}
+
+/*============  End of layout  =============*/
+
+/*=============================================
+=                   footer                   =
+=============================================*/
+
+.attribution {
+  background-color: #fff;
+  line-height: 1.5;
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution p {
+  font-size: 2rem;
+}
+
+/*============  End of footer  =============*/

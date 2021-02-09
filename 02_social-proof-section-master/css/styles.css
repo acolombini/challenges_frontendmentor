@@ -14,19 +14,22 @@ body {
   font-family: 'Spartan', sans-serif;
   font-size: 1.5rem;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
-.main-content {
+.container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
-  padding: 3rem 2rem;
+  min-width: 90%;
+  padding: 2rem;
 }
 
 .content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .content__title {
@@ -96,8 +99,6 @@ body {
 
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
 }
 
 .attribution {
@@ -123,19 +124,36 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .reviews {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+  }
+
+  .review-container {
+    width: 80%;
+  }
+
+  .review-container:nth-child(1) {
+    margin-left: 3rem;
+  }
+  .review-container:nth-child(2) {
+    margin-left: 6rem;
+  }
+  .review-container:nth-child(3) {
+    margin-left: 9rem;
+  }
+
   .testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card-container:nth-child(1) {
-    padding-top: 2rem;
-  }
   .card-container:nth-child(2) {
     padding-top: 4rem;
   }
   .card-container:nth-child(3) {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 
   .testimonial-card {
